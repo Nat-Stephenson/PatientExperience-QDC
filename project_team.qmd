@@ -13,4 +13,4 @@ comments: false
 
 - Pete Williamson, Insight and Feedback Manager, NHS England
 
-- YiWen Hon, Data Scientist, Nottinghamshire Healthcare NHS Foundation Trust
+- YiWen Hon, Data Scientist, The Strategy Unit
