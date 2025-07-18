@@ -1,0 +1,91 @@
+project:
+  type: website
+
+website:
+  site-url: https://nat-stephenson.github.io/PatientExperience-QDC/
+  repo-url: https://github.com/Nat-Stephenson/PatientExperience-QDC
+  favicon: docs/_assets/favicon.ico
+  open-graph: true
+  title: "PatientExperience-QDC website"
+  description: "Website for the NHS England funded Patient Experience Qualitative Data Categorisation project"
+  repo-actions: [issue, edit]
+
+  page-footer:
+    left: "This page is built with [Quarto](https://quarto.org/) and is based on the [NHS-R Community Theme](https://github.com/nhs-r-community/assets/blob/main/brand/_brand.yml)"
+    right:
+      - text: "License"
+        href: https://github.com/Nat-Stephenson/PatientExperience-QDC/blob/main/LICENCE
+      - text: "Code of Conduct"
+        href: https://github.com/Nat-Stephenson/PatientExperience-QDC/blob/main/CODE_OF_CONDUCT.md
+
+  navbar:
+    background: light
+    title: false
+    collapse-below: lg
+    left:
+      - text: "About PatientExperience-QDC"
+        icon: ":fa-book:"
+        href: index.qmd
+      - text: "Blogposts"
+        icon: ":fa-rss:"
+        href: updates.qmd
+    right:
+      - text: "Help"
+        menu:
+          - text: "Report a Bug"
+            icon: ":fa-bug:"
+            href: "https://github.com/Nat-Stephenson/PatientExperience-QDC/issues"
+          - text: "Ask a Question"
+            icon: ":fa-comments:"
+            href: "https://github.com/Nat-Stephenson/PatientExperience-QDC/discussions"
+      - icon: ":fa-github:"
+        href: https://github.com/Nat-Stephenson/PatientExperience-QDC
+        aria-label: GitHub
+
+  sidebar:
+    id: toc-side
+    style: docked
+    pinned: true
+    contents:
+      - text: "Homepage"
+        file: index.qmd
+      - text: "Project background"
+        file: background/background.qmd
+        contents: 
+          - background/phase_1.qmd
+      - section: Qualitative Framework
+        file: framework/index.qmd
+        contents:
+          - auto: framework/*.qmd
+      - section: Machine learning (pxtextmining)
+        file: pxtextmining/index.qmd
+        contents:
+          - pxtextmining/performance_metrics.qmd
+          - pxtextmining/model_selection.qmd
+          - pxtextmining/additional_features.qmd
+          - pxtextmining/model_performance.qmd
+          - pxtextmining/using_models.qmd
+          - pxtextmining/pxtextmining_learning.qmd
+      - section: Experiences dashboard
+        file: dashboard/index.qmd
+        contents:
+          - auto: dashboard/*.qmd
+      - text: "Project team"
+        file: project_team.qmd
+
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    code-copy: true
+    theme: _brand.yml
+    
+    # Optionally, add theme, css, or highlight-style for more customization:
+    # theme: cosmo
+    # css: styles.css
+    # highlight-style: github
+
+execute:
+  freeze: auto 
+  warning: false
+  

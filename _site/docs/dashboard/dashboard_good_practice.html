@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Estelle Phillips">
+<meta name="dcterms.date" content="2023-10-11">
+
+<title>Good practice guidance – PatientExperience-QDC website</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../docs/_assets/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta property="og:title" content="Good practice guidance – PatientExperience-QDC website">
+<meta property="og:description" content="How to use the dashboard to improve your use of qualitative data">
+<meta property="og:site_name" content="PatientExperience-QDC website">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> <i class="bi bi-book" role="img">
+</i> 
+<span class="menu-text">About PatientExperience-QDC</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../updates.html"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text">Blogposts</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Help</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-help">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/Lextuga007/PatientExperience-QDC/issues"><i class="bi bi-bug" role="img">
+</i> 
+ <span class="dropdown-text">Report a Bug</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/Lextuga007/PatientExperience-QDC/discussions"><i class="bi bi-chat-right-text" role="img">
+</i> 
+ <span class="dropdown-text">Ask a Question</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Lextuga007/PatientExperience-QDC"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../dashboard/index.qmd">Experiences dashboard</a></li><li class="breadcrumb-item"><a href="../../docs/dashboard/index.html">Docs</a></li><li class="breadcrumb-item"><a href="../../docs/dashboard/index.html">Dashboard</a></li><li class="breadcrumb-item"><a href="../../docs/dashboard/dashboard_good_practice.html">Good practice guidance</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homepage</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../background/background.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project background</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">background/phase_1.qmd</span>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../framework/index.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Qualitative Framework</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Docs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../docs/framework/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Qualitative framework</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/framework/framework2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Framework development</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/framework/framework3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Framework details</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pxtextmining/index.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Machine learning (pxtextmining)</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">pxtextmining/performance_metrics.qmd</span>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">pxtextmining/model_selection.qmd</span>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">pxtextmining/additional_features.qmd</span>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">pxtextmining/model_performance.qmd</span>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">pxtextmining/using_models.qmd</span>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">pxtextmining/pxtextmining_learning.qmd</span>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../dashboard/index.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Experiences dashboard</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Docs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../docs/dashboard/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/dashboard/dashboard_good_practice.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Good practice guidance</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../project_team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project team</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-the-dashboard-does" id="toc-what-the-dashboard-does" class="nav-link active" data-scroll-target="#what-the-dashboard-does">What the dashboard does</a></li>
+  <li><a href="#what-the-dashboard-does-not-do" id="toc-what-the-dashboard-does-not-do" class="nav-link" data-scroll-target="#what-the-dashboard-does-not-do">What the dashboard does <strong>not</strong> do</a></li>
+  <li><a href="#qualitative-caveats-and-tips" id="toc-qualitative-caveats-and-tips" class="nav-link" data-scroll-target="#qualitative-caveats-and-tips">Qualitative caveats and tips</a>
+  <ul>
+  <li><a href="#why-should-i-move-beyond-the-quantification-of-qualitative-data" id="toc-why-should-i-move-beyond-the-quantification-of-qualitative-data" class="nav-link" data-scroll-target="#why-should-i-move-beyond-the-quantification-of-qualitative-data">Why should I move beyond the quantification of qualitative data?</a></li>
+  <li><a href="#what-is-the-value-of-the-not-assigned-sub-category" id="toc-what-is-the-value-of-the-not-assigned-sub-category" class="nav-link" data-scroll-target="#what-is-the-value-of-the-not-assigned-sub-category">What is the value of the ‘Not assigned’ sub-category?</a></li>
+  <li><a href="#how-can-i-identify-topics-not-in-the-sub-category-framework" id="toc-how-can-i-identify-topics-not-in-the-sub-category-framework" class="nav-link" data-scroll-target="#how-can-i-identify-topics-not-in-the-sub-category-framework">How can I identify topics not in the sub-category framework?</a></li>
+  </ul></li>
+  <li><a href="#practical-advice-for-using-the-categorised-data" id="toc-practical-advice-for-using-the-categorised-data" class="nav-link" data-scroll-target="#practical-advice-for-using-the-categorised-data">Practical advice for using the categorised data</a>
+  <ul>
+  <li><a href="#how-can-i-deal-with-large-volumes-of-categorised-data" id="toc-how-can-i-deal-with-large-volumes-of-categorised-data" class="nav-link" data-scroll-target="#how-can-i-deal-with-large-volumes-of-categorised-data">How can I deal with large volumes of categorised data?</a></li>
+  <li><a href="#how-can-i-move-beyond-reading-to-qualitative-analysis" id="toc-how-can-i-move-beyond-reading-to-qualitative-analysis" class="nav-link" data-scroll-target="#how-can-i-move-beyond-reading-to-qualitative-analysis">How can I move beyond reading to qualitative analysis?</a></li>
+  <li><a href="#how-can-i-report-qualitative-analysis-findings" id="toc-how-can-i-report-qualitative-analysis-findings" class="nav-link" data-scroll-target="#how-can-i-report-qualitative-analysis-findings">How can I report qualitative analysis findings?</a></li>
+  </ul></li>
+  <li><a href="#further-training" id="toc-further-training" class="nav-link" data-scroll-target="#further-training">Further training</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/Lextuga007/PatientExperience-QDC/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/Lextuga007/PatientExperience-QDC/edit/main/docs/dashboard/dashboard_good_practice.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../dashboard/index.qmd">Experiences dashboard</a></li><li class="breadcrumb-item"><a href="../../docs/dashboard/index.html">Docs</a></li><li class="breadcrumb-item"><a href="../../docs/dashboard/index.html">Dashboard</a></li><li class="breadcrumb-item"><a href="../../docs/dashboard/dashboard_good_practice.html">Good practice guidance</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Good practice guidance</h1>
+<p class="subtitle lead">How to use the dashboard to improve your use of qualitative data</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Estelle Phillips </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 11, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This section provides information on good practice when working with qualitative data, as well as practical tips, and advice to help you maximise your use of the qualitative comments that the dashboard draws on. The dashboard should be used to facilitate initial exploration of your qualitative data, before drawing fuller insight from the underlying qualitative comments. We recommend you use the dashboard as a data discovery tool.</p>
+<section id="what-the-dashboard-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-dashboard-does">What the dashboard does</h3>
+<ul>
+<li><p>Categorises large volumes of qualitative comments, organising them into more manageable batches i.e., sub-categories. This is often the starting point of qualitative analysis even when done manually, so the tool saves you time by doing this initial sorting for you.</p></li>
+<li><p>Provides visuals and functionality to help you start exploring your data and identify possible patterns, or areas of particular interest.</p></li>
+<li><p>Displays the underlying qualitative comments which you can then read and/or use for more in-depth qualitative analysis to derive actionable insights.</p></li>
+</ul>
+</section>
+<section id="what-the-dashboard-does-not-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-dashboard-does-not-do">What the dashboard does <strong>not</strong> do</h3>
+<ul>
+<li><p>Replace the need to read the underlying qualitative comments.</p></li>
+<li><p>Apply human interpretation or contextual knowledge about your Trust.</p></li>
+<li><p>Carry out the detailed qualitative analysis required to maximise the usefulness of the data and meaningfully listen to all of the feedback fully.</p></li>
+</ul>
+</section>
+<section id="qualitative-caveats-and-tips" class="level1">
+<h1>Qualitative caveats and tips</h1>
+<section id="why-should-i-move-beyond-the-quantification-of-qualitative-data" class="level2">
+<h2 class="anchored" data-anchor-id="why-should-i-move-beyond-the-quantification-of-qualitative-data">Why should I move beyond the quantification of qualitative data?</h2>
+<p>Whilst looking at the volumes of data for sub-categories can be a useful starting point to understanding your data, you will miss qualitative findings and/or misinterpret the data if you rely on the number of comments. You should take care not to oversimplify by assuming that the sub-categories with the most data categorised within them, are the most important and impactful, or that sub-categories with a low volume of data aren’t worth further exploration. In relation to this:</p>
+<ul>
+<li><p>We know that the Friends &amp; Family test qualitative data is heavily skewed towards certain sub-categories, in particular ‘Staff manner &amp; personal attributes’ and ‘Positive experience &amp; gratitude’ so these will likely always show up in the greatest volumes.</p></li>
+<li><p>Issues raised in comments are not necessarily only experienced by the people mentioning them, for example only two people might say that food is consistently cold by the time it gets to a ward, but the reality is that this is very likely happening for everyone on the ward, not just the two people who mentioned it. In this way even a single comment could lead to improvements for multiple people.</p></li>
+<li><p>Experiences which relate to a small sub-set of people, will never show up in high volumes but can have a significant impact on these people, just focusing on high volumes means their experiences will constantly be overlooked. This is especially important when aiming to include the feedback from small populations and communities with protected characteristics for example.</p></li>
+</ul>
+</section>
+<section id="what-is-the-value-of-the-not-assigned-sub-category" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-value-of-the-not-assigned-sub-category">What is the value of the ‘Not assigned’ sub-category?</h2>
+<p>There may be some cases where a comment contains information which the model does not recognise as being relevant to any of the other sub-categories, in these cases it will categorise the comment as ‘Not assigned’. It is important to check the comments placed here as this is where you are likely to find comments on less frequently raised or rare topics. These topics can be very important to pay attention to.</p>
+</section>
+<section id="how-can-i-identify-topics-not-in-the-sub-category-framework" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-i-identify-topics-not-in-the-sub-category-framework">How can I identify topics not in the sub-category framework?</h2>
+<p>We know that there are a small number of topics which occasionally appear in the data but don’t have a sub-category. If they exist within your data, the comment search functionality in the dashboard could be used to help identify these. Examples of these infrequent topics as well as some suggested search terms are outlined in the table below.</p>
+<div id="tbl-searchterms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-searchterms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Infrequent topics and potential search terms
+</figcaption>
+<div aria-describedby="tbl-searchterms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Topic</strong></th>
+<th><strong>Potential search terms</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Patient appearance &amp; grooming</td>
+<td>Clothes, dressed, gown, hair, shower(s), wash</td>
+</tr>
+<tr class="even">
+<td>Equality, diversity &amp; inclusion</td>
+<td>Adjustments, ADHD, age, autistic, deaf, disabled, disability, disabilities, gender, hearing, language, mobility</td>
+</tr>
+<tr class="odd">
+<td>Patient records</td>
+<td>Accurate, confidentiality, notes, paperwork, record(s), system, updated</td>
+</tr>
+<tr class="even">
+<td>Admission</td>
+<td>Admission, admissions, admitted</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+</section>
+<section id="practical-advice-for-using-the-categorised-data" class="level1">
+<h1>Practical advice for using the categorised data</h1>
+<section id="how-can-i-deal-with-large-volumes-of-categorised-data" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-i-deal-with-large-volumes-of-categorised-data">How can I deal with large volumes of categorised data?</h2>
+<p>Large volumes of qualitative data can be overwhelming which creates a barrier to making use of it, a strategy to help with this is distributing sub-sets of comments to the most appropriate areas of your organisation where people are best placed to make practical use of the data. For example:</p>
+<ul>
+<li><p>As the ‘Positive experience &amp; gratitude’ sub-category captures information which is very ‘thin’ (e.g., lacks detail), it is suggested that there is little value in additional analysis of the comments. A better use case here is to simply distribute it to relevant teams as feedback which can be shared with staff and celebrated.</p></li>
+<li><p>Comments mapped to the ‘Environment, facilities &amp; equipment’ sub-categories could be shared with Estates &amp; Facilities given they often identify areas that need maintenance or could be fixed.</p></li>
+<li><p>Other sub-categories such as ‘Funding &amp; use of financial resources’ may be most usefully received by senior management. Some of the ‘Staff’ sub-categories such as ‘Staffing levels &amp; responsiveness’ and ‘Competence &amp; training’ may be most useful to HR or managers.</p></li>
+</ul>
+<p>If you have limited resource to look at the qualitative data and don’t know where to start, you may wish to consider the following to decide which sub-categories to explore in more depth:</p>
+<ul>
+<li><p>Prioritise those of particular interest for your Trust. For example, looking at the qualitative comments for relevant sub-categories where findings from other surveys, quantative analysis, research or information from staff indicate there is an issue.</p></li>
+<li><p>Where there are sub-categories you are surprised to see data appearing against, even if comments are low in volume. This could tell you something you didn’t know before.</p></li>
+<li><p>Use the visuals and filters in the dashboard to identify if there are any changes in the volume of information you are seeing for sub-categories, service areas or demographic groups. Explore what makes you curious.</p></li>
+<li><p>Use the inter-relationship between sub-categories functionality in the dashboard to identify sub-categories where there are indications that the comment content may overlap, then look at these in conjunction with each other.</p></li>
+<li><p>Rotate which sub-categories you look at in depth, e.g., you could focus on a different one each month.</p></li>
+</ul>
+</section>
+<section id="how-can-i-move-beyond-reading-to-qualitative-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-i-move-beyond-reading-to-qualitative-analysis">How can I move beyond reading to qualitative analysis?</h2>
+<p>Ideally your organisation will have access to the necessary resource and qualitative analysis skills to move beyond simply reading and quantifying comments to apply a more suitable analytical approach. Here it can be useful to consider the following when looking at comments for a sub-category:</p>
+<ul>
+<li><p>Whether there is variation in what people are saying and if there is a split between negative and positive comments. Look for the reasons for these differences. Use any insights around what sits behind differences to report on where and how improvements could be made. Adding what you know about the context of the feedback can support with its use, e.g., did the feedback collected about a particular sub-category rise in volume notably after a change was made in that particular ward or pathway.</p></li>
+<li><p>Identify where people are having good experiences, with examples that can be celebrated and used to provide positive feedback to staff. These could be individual comments or where you are seeing patterns of consistently good feedback.</p></li>
+<li><p>Identify the characteristics that lead to good experiences for people that can be shared within the Trust to promote good practice and provide evidence to boards, departments, and staff around what is working well and why. Consider whether the things that are working well could be transferable to other settings or spread wider.</p></li>
+</ul>
+</section>
+<section id="how-can-i-report-qualitative-analysis-findings" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-i-report-qualitative-analysis-findings">How can I report qualitative analysis findings?</h2>
+<p>Once qualitative comments have been read and/or analysed the following are useful prompts to include in reporting, with a view to improving patient experiences and promoting good practice within your Trust:</p>
+<ul>
+<li><p>For each sub-category you have looked at what the data tells you about a topic and what conclusions you have drawn from it.</p></li>
+<li><p>Any action steps you could take and how they could be achieved.</p></li>
+<li><p>Who would need to be involved and who would be responsible for taking the actions forward.</p></li>
+</ul>
+<p>This kind of information could be reported to and discussed at relevant staff meetings and/or the Trust board. Analysing and presenting information in the ways described above is good practice when working with qualitative data, as opposed to simply presenting quantified volumes of data for categories/sub-categories.</p>
+<p>When presenting and reporting qualitative findings in more depth you should look to describe findings in words, not numbers and use examples/ quotes to substantiate findings. Within qualitative reporting it is also valid to draw findings from one comment e.g., if what has been described is likely to happen again or have an impact for more people that the one person who shared the feedback.</p>
+</section>
+</section>
+<section id="further-training" class="level1">
+<h1>Further training</h1>
+<p>Further training on qualitative analysis and best use of qualitative data, is available to NHS staff here: <a href="https://future.nhs.uk/system/login?nextURL=%2Fconnect%2Eti%2FMDC%2Fview%3FobjectId%3D23040240">Training info (including slides &amp; recordings) - Making Data Count - FutureNHS Collaboration Platform</a> The relevant slides and recordings can be found in the ‘Making Data Count - Step 9 Making Qualitative Data Count’ section and you can also sign-up to attend upcoming live re-runs of the training by searching for dates on the Calendar.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/Lextuga007\.github\.io\/PatientExperience-QDC");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a> and is based on the <a href="https://github.com/craig-shenton/quarto-nhs-theme">NHS Theme by Craig Shenton</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Lextuga007/PatientExperience-QDC/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/Lextuga007/PatientExperience-QDC/edit/main/docs/dashboard/dashboard_good_practice.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/Lextuga007/PatientExperience-QDC/blob/main/LICENCE">
+<p>License</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/Lextuga007/PatientExperience-QDC/blob/main/CODE_OF_CONDUCT.md">
+<p>Code of Conduct</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

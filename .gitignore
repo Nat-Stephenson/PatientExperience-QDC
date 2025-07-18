@@ -4,3 +4,4 @@
 renv/
 renv*
 .Rprofile
+/.quarto/

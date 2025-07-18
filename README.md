@@ -11,4 +11,3 @@ Distributed under a MIT License. _See [LICENSE.md](/LICENSE) for more informatio
 ## About
 
 Project contact email: [mlcsu.su.datascience@nhs.net](mailto:mlcsu.su.datascience@nhs.net)
-
